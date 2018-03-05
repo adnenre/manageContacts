@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+<script src="js/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+<script src="js/angular-ressource.js"></script>
+<script src="js/mon_Application.js"></script>
+</head>
+<body>
+ <div class="container" ng-app="monApp">
+ 	<div class="contact_container">
+ 
+	 	 <div class="left_content">
+	 	 	<div class="nav_menu_container">
+	 	 		<ul class="nav_list">
+	 	 			<li class="nav_element"><a class=" nav_link shadow" href="#/contact"><i class="fa fa-address-book"></i></a></li>
+	 	 			<li class="nav_element"><a class="disabled nav_link shadow_s" href=""><i class="fa fa-envelope"></i></a></li>
+	 	 			<li class="nav_element"><a class="disabled nav_link shadow_s" href=""><i class="fa fa-comments"></i></a></li>
+	 	 			<li class="nav_element"><a href="" class="disabled nav_link shadow_s"><i class="fa fa-folder-open"></i></a></li>
+	 	 			<li class="nav_element"><a href="" class="disabled nav_link shadow_s">	<i class="fa fa-suitcase"></i></a></li>
+	 	 		
+	 	 			
+	 	 		</ul>
+	 	 	</div>
+	 	 </div>
+	 	 <div class="right_content" ng-controller="displayContact">
+	 	 	<div class="nav_bar" >
+	 	 		<div class="nav_bar_content">
+	 	 			<h3 class="white-text">Contact</h3>
+	 	 			<div class="navbar_left">
+		 	 			<input type="text" class="c-input shadow" ng-model="searchString" placeholder="Recherche...">
+		 	 			<button ng-click="set_as_gallery()" class ="c-btn shadow"><i class="fa fa-th"></i></button>
+		 	 			<button ng-click="set_as_list()" class ="c-btn shadow"><i class="fa fa-th-list"></i></button>
+		 	 			<button class ="c-btn shadow"><i class="fa fa-plus"></i></button>
+	 	 			</div>
+	 	 		</div>
+	 	 	</div>
+	 	    <div class="main_content">
+	 	 	<div ng-view></div>
+	 	 </div>
+	 	 </div>
+    </div>
+ </div>
+
+</body>
+</html>

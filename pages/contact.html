@@ -1,0 +1,35 @@
+
+
+<div class="user-detail-card">
+	<div class="user-detail-card-left">
+		<div class="user-detail-left-header">
+			
+		<img  class="bg-header-img" src="images/header/{{ getContact(id_contact)['img_header']}}" alt="">			
+		<img class="user-detail-img" ng-src="images/{{ getContact(id_contact)['img'] }}" alt="">
+	    </div>
+	    <div class="user-detail-info">
+	    	<h5 class="user-info user-info-name">{{ getContact(id_contact)['name'] }}</h5>
+	    	<h5 class="user-info user-info-email">{{ getContact(id_contact)['email'] }}</h5>
+	    </div>
+		<div class="user-social">
+			
+			<a class="ui_animate user-social-link" target="_blank" href="{{ getContact(id_contact)['social']['twitter'] }}"><i class="fa fa-twitter"></i></a>
+			<a class="ui_animate user-social-link" target="_blank" href="{{ getContact(id_contact)['social']['codepen'] }}"><i class="fa fa-codepen"></i></a>
+			<a class="ui_animate user-social-link" target="_blank" href="{{ getContact(id_contact)['social']['github'] }}"><i class="fa fa-github"></i></a>
+			<a class="ui_animate user-social-link" target="_blank" href="{{ getContact(id_contact)['social']['linkedin'] }}"><i class="fa fa-linkedin"></i></a>
+		</div>
+    </div>
+	<div class="user-detail-card-right bg-gradient">
+		  	<div class="user-detail-header">
+		  		
+		  	</div>
+		  	<div class="user-detail-body">
+		  		<h3> </h3>
+                <h3></h3>
+                <h3> </h3>
+		  	</div>
+		  	<div class="user-detail-footer">
+		  		
+		  	</div>
+	</div>
+</div>

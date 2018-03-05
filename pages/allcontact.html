@@ -1,0 +1,16 @@
+<div ng-class="class" class="app_body"  ng-controller="mainController" >
+	 	 		<div class="card animate-repeat shadow"  ng-repeat="contact in contacts | searchForContact:searchString"">
+	 	 			<div class="card_container" ng-click="showDetail(contact.id)" data-id={{contact.id}}>
+	 	 				<div class="card_header">
+	 	 						<img ng-src="images/{{contact.img}}" alt="">
+	 	 					<div class="contact_info">
+	 	 						<p class="contact_name">{{ contact.name }}</p>
+	 	 						<p class="contact_email">{{ contact.email }}</p>
+	 	 					</div>
+	 	 				</div>
+	 	 				<div class="card_body"></div>
+	 	 				<div class="card_footer"></div>
+	 	 			</div>
+	 	 		</div>
+
+</div>

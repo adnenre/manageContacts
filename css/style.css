@@ -1,0 +1,421 @@
+*{
+	padding:0;
+	margin:0;
+}
+html,body{
+	height:100%;
+	width:100%;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('../fonts/Gotham-Light.otf') format('woff'), /* Modern Browsers */
+     url('../fonts/GothamBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/Gotham-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+   font-weight: 700;
+   font-style: normal;
+ }
+
+
+body{
+	font-family: 'Gotham';
+	background:linear-gradient(166deg, #5186ac 25%, #5686ac 47%, #7a79a9 64%, #686399, #4e5687) no-repeat center center fixed;
+}
+.container{
+	width:80%;
+	margin:auto;
+	    min-height: 80%;
+	border-radius: 20px;
+	background: url(../images/bg.png);;
+	height:80%;
+	margin-top:50px;
+	box-shadow: 0px 0px 8px 0px #ddd;
+	overflow: hidden;
+}
+.contact_container	{
+	display:flex;
+    background: rgba(255, 255, 255, 0.20);
+    border-radius: 5px;
+    height: 100%;
+    box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.1);
+    transition: 0.3s;	
+}
+
+.left_content{
+	width:100px;
+	padding:1rem;
+	    border-right: solid 1px #ffffff45;
+	    background:rgba(255, 255, 255, 0.15);
+}
+.nav_list{
+	list-style:none;
+
+}
+.nav_element{
+display:flex;
+align-item:center;
+}
+.nav_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem;
+    width: 50px;
+    height: 50px;
+    border: solid 1px rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+
+}
+.disabled{
+	cursor: not-allowed;
+
+}
+.nav_link:hover,.nav_link:focus{
+	
+	color:#fff;
+	text-decoration: none;
+}
+/*==============================
+=            navbar            =
+==============================*/
+.white-text{
+	color:white;
+}
+.right_content{
+	flex:1;
+	display:flex;
+	flex-direction:column;
+	
+}
+.nav_bar{
+	width: 100%;
+    padding: 0.8rem 1.5rem;
+     background:rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
+}
+
+.nav_bar_content{
+	width:inherit;
+	display:flex;
+	justify-content:space-between;
+	    align-items: center;
+}
+.navbar_left{
+	display:flex;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+  font-size:0.7rem;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+  font-size:0.7rem;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+  font-size:0.7rem;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+  font-size:0.7rem;
+}
+
+/*=====  End of navbar  ======*/
+.c-input{
+	display:block;
+	border-radius:1rem;
+	border:none;
+	padding:0.5rem 1rem;
+	 border: solid 1px rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.15);
+	outline:none;
+	color:white;
+	width:100px;
+	transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s;
+}
+.c-input:focus{
+	width:200px;
+}
+
+.c-btn{
+	cursor:pointer;
+	color:white;
+	outline:none;
+	border-radius: 50%;
+    border: solid 1px rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.15);
+    width: 35px;
+    height: 35px;
+        margin: 0 0 0 0.5rem;
+}
+.main_content {
+    overflow-y: scroll;
+    height:100%;
+    padding: 0 1rem;
+}
+::-webkit-scrollbar { 
+		width: 5px;
+		background: #ffffff14;
+} 
+
+::-webkit-scrollbar-thumb { 
+		border-radius: 4px;
+		background-color: white;
+}
+.app_body{
+	 margin-top: 0.5rem;
+	transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+.app_body.contact_list{
+display:flex;
+	    flex-wrap: wrap;
+	    flex-direction:column;
+	     
+	    width:100%;
+}
+.app_body.contact_galery{
+	display:flex;
+	    flex-wrap: wrap;
+	   width:99%;
+	    flex-direction:row;
+}
+.app_body.contact_list > .card{
+	margin:0.5rem;
+	border-radius: 10px;
+	overflow:hidden;
+	padding:0;
+}
+.app_body.contact_list > .card > .card_container >.card_header > img{
+	border-radius:0px;
+	width:80px;
+	height:80px;
+	transition:0.3s;
+}
+.shadow {
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+.shadow:hover {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.1);
+}
+.shadow_s {
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+/*=============================================
+=            Section card           =
+=============================================*/
+.card{
+	margin: 0.8rem;
+   
+    padding: 0.5rem;
+    border-radius: 32px;
+    transition:300ms;
+    border: solid 1px rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.15);
+    position:relative;
+    overflow:hidden;
+}
+.card::before {
+    content: "";
+    display: block;
+    width: 0px;
+    background: linear-gradient(45deg,#5186ac,#673AB7);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s;
+}
+
+
+.card:hover{
+	cursor:pointer;
+	border: solid 1px transparent;
+	transform:scale(1.04);
+	box-shadow:  0px 10px 2px -10px #673ab769, 0px 24px 2px -16px #673ab73d, 0px 24px 2px -20px #3f51b54f
+	
+}
+.card:hover::before{
+	width:100%;
+}
+.card_container{
+	display:flex;
+	flex-direction:column;
+}
+.card_header{
+	display:flex;
+	    align-items: center;
+	    z-index:1000;
+}
+.card_header > img{
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	
+}
+.contact_info{
+	padding:0 0.5rem;
+}
+.contact_name{
+	font-weight: 800;
+	color:white;
+
+
+}
+.contact_email{
+	color: #eeeeee;
+    font-size: 0.8rem;
+    padding: 0.5rem 0;
+}
+
+
+
+
+/*=====  End of Section card ======*/
+/* animation */
+.animate-repeat {
+    
+    -webkit-transition: 0.3s linear all;
+    transition: 0.3s linear all;
+}
+
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+    -webkit-transition:all linear 0.3s;
+    transition:all linear 0.3s;
+}
+
+.animate-repeat.ng-leave.ng-leave-active,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter {
+    opacity:0.5;
+
+    
+}
+
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move.ng-move-active,
+.animate-repeat.ng-enter.ng-enter-active {
+    opacity:0.5;
+    
+}
+.animate-repeat.ng-leave{
+	background:red;
+	
+}
+
+
+.animate-repeat.ng-leave-stagger {
+ -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+}
+
+.animate-repeat.ng-enter-stagger {
+   
+    
+
+     -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+}
+/*===========================================
+=            section user detail            =
+===========================================*/
+.user-detail-card{
+	display:flex;
+    margin:1rem;
+    background:rgba(255, 255, 255, 0.45);
+    border-radius:25px;
+        box-shadow: 0 9px 39px 2px #2c2c2c33;
+    overflow:hidden;
+
+}
+.user-detail-card-right,.user-detail-card-left{
+	width:50%;
+	display:flex;
+	flex-direction:column;	
+	    min-height: 400px;
+	    
+}
+.bg-gradient{
+	background: linear-gradient(45deg,#5186ac,#673AB7);
+	color:white;
+}
+.user-detail-left-header{
+	display:flex;
+	width:100%;
+flex:1;
+position:relative;
+}
+.bg-header-img {
+    position: absolute;
+    height: 50%;
+    z-index: 0;
+    width: 100%;
+}
+.user-detail-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+    z-index: 100;
+    border: solid 4px rgba(255, 255, 255, 0.40);
+}
+.user-social{
+	display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    padding: 1rem;
+}
+.user-social-link{
+	display:flex;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	background: white;
+	color:#673AB7;
+	text-decoration:none;
+	transition:0.2s;
+	
+}
+.user-social-link:hover{
+	background: linear-gradient(45deg,#5186ac,#673AB7);
+	color:white;
+}
+.user-social-link > i{
+	margin:auto;
+}
+.ui_animate{
+transition: 0.2s;
+}
+.ui_animate:hover{
+       box-shadow: 0 6px 17px -2px #5e59b2;
+}
+.user-detail-info{
+	padding:0.5rem;
+}
+.user-info{
+	text-align:center;
+	color:#673AB7;
+	
+}
+
+.user-info-name{
+	font-size:1rem;
+	padding: 0.2rem;
+}
+.user-info-email{
+	
+	font-size:0.8rem;
+}
+/*=====  End of section user detail  ======*/
